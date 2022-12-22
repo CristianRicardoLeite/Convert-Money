@@ -1,0 +1,219 @@
+*{font-family: 'Fjalla One', sans-serif;
+    box-sizing: border-box;
+   border: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(173, 69, 69);
+    letter-spacing: 0.5px;
+}
+
+
+body{
+    background: #4f4f52;
+}
+
+.container {
+    width: 600px;
+    height: 1000px;
+    background-color: #222423;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.navBar-text {
+    width: 100%;
+    height: 100px;
+    border: none;
+    background: #444038; 
+}
+
+    h1{
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 18px;
+    }
+
+    input, select{
+        width: 540px;
+        height: 48px;
+        margin: 6px 30px;
+        padding: 16px;
+        color: rgb(34, 36, 35);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        border: 1px solid rgb(187, 187, 187);
+        border-radius: 15px;
+        appearance: none;
+        outline: none;
+        box-shadow: rgb(0 0 0 / 15%) 2px 2px 5px;
+    }
+
+   .input-descriptions{
+        margin-top: 45px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 18px;       
+    }
+
+    select{
+        padding: 14px;    
+    }
+
+    button{
+        width: 450px;
+        height: 60px;
+        border: none;
+        border-radius: 25px;
+        color: #F4F4F4;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        background-color: #444038;
+        margin: 50px 75px;
+        cursor: pointer;
+    }
+
+    button:hover{
+        opacity: 0.8;
+    }
+
+    button:active{
+        opacity: 0.5;
+    }
+
+    .resultsView {
+        width: 365px;
+        height: 320px;
+        font-size: 20px;
+        background-color: #32302c;
+        border: 6px solid #444038;
+        border-radius: 4px;
+        margin: 0 auto;
+        margin-top: -5px;
+        text-align: center;
+    }
+
+    .Vector{
+        margin:5px;
+    }
+
+    #coinFlag{
+        margin-top: 6px;
+    }
+
+    .content-view{
+        margin-top: 15px;
+    }
+
+    .resultConverterView{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 18px;
+        color: #1B83E2;
+    }
+
+
+    @media screen and (max-width: 400px){
+
+        .container {
+            width:375px;
+            height: 766px;
+            margin: 0 auto;
+        }
+
+        .navBar-text {
+            width: 100%;
+            height: 66px;
+            border: none;
+            background: #444038; 
+        }
+        
+        h1{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 18px;
+        }
+
+        input{
+            width: 327px;
+            height: 48px;
+            margin: 6px 24px;
+            padding: 16px;
+            color: #222423;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            border: 1px solid #BBBBBB;
+            border-radius: 15px;
+            appearance: none;
+            outline: none;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .input-descriptions{
+            margin-top: 24px;
+            margin-left: 23px;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 18px;       
+        }
+
+        select{
+            width: 327px;
+            height: 48px;
+            margin: 6px 24px;
+            padding: 14px;
+            color: #222423;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            border: 1px solid #BBBBBB;
+            border-radius: 15px;
+            cursor: pointer;
+            appearance: none;
+            outline: none;
+        }
+
+        button{
+            width: 327px;
+            height: 48px;
+            border: none;
+            border-radius: 25px;
+            color: #F4F4F4;
+            font-style: bold;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            background-color: #444038;
+            margin: 30px 24px;
+            cursor: pointer;
+        }
+
+        .resultsView {
+            width:327px;
+            height:290px;
+            font-size: 16px;
+            background-color: #32302c; ;
+            border: 6px solid #444038;
+            border-radius: 4px;
+            margin: 0 auto;
+            margin-top: -17px;
+            text-align: center;
+        }
+
+
+    
+    }
+        
+
+  
