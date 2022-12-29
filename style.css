@@ -16,8 +16,7 @@ body{
     width: 600px;
     height: 1000px;
     background-color: #222423;
-    margin: 0 auto;
-    margin-top: 100px;
+    margin: 35px auto;
 }
 
 .navBar-text {
@@ -111,7 +110,7 @@ body{
         margin-top: 15px;
     }
 
-    .resultConverterView{
+    #resultConverterView{
         font-style: normal;
         font-weight: 700;
         font-size: 22px;
