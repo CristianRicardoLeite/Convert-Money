@@ -109,21 +109,33 @@ const converter = async () => {
 }
 
 const selectDisable = () => {
-    selectDisable = document.getElementById('converting-currency')
-    if (selectDisable === "US$ Dolar Americano"){
-        const  selectConvertedAcurrency = document.getElementById('US$ Dolar Americano')
-        selectConvertedAcurrency.setAttribute('disabled')
-    }
-       else if (selectDisable === "€ Euro"){
-            const  selectConvertedAcurrency = document.getElementById('€ Euro')
-            selectConvertedAcurrency.setAttribute('disabled')
-          }
+    var select = document.getElementById('converting-currency');
+	var value = select.options[select.selectedIndex].value;
+	console.log(value);
+    
+    if (value === "US$ Dolar Americano") {
+        const selectConvertedAcurrency = document.getElementById('US$ Dolar Americano')
+        selectConvertedAcurrency.setAttribute('disabled', '')
+        document.getElementById('€ Euro').removeAttribute("disabled")
+        document.getElementById('R$ Real').removeAttribute("disabled")
 
-       else if (selectDisable === "R$ Real"){
-            const  selectConvertedAcurrency = document.getElementById('R$ Real')
-            selectConvertedAcurrency.setAttribute('disabled')
-          }
+    }
+    else if (value === "€ Euro") {
+        const selectConvertedAcurrency = document.getElementById('€ Euro')
+        selectConvertedAcurrency.setAttribute('disabled', '') 
+        document.getElementById('US$ Dolar Americano').removeAttribute("disabled")
+        document.getElementById('R$ Real').removeAttribute("disabled")
+    }
+
+    else if (value === "R$ Real") {
+        const selectConvertedAcurrency = document.getElementById('R$ Real')
+        selectConvertedAcurrency.setAttribute('disabled', '')
+        document.getElementById('US$ Dolar Americano').removeAttribute("disabled")
+        document.getElementById('€ Euro').removeAttribute("disabled")
+    }
+
 }
+
 
 const changeAcurrencyConverting = () => {
 
@@ -220,6 +232,7 @@ const resetInput = () => {
 
 button.addEventListener('click', converter)
 convertingCurrency.addEventListener('change', changeAcurrencyConverting )
+convertingCurrency.addEventListener('change', selectDisable)
 select.addEventListener('change', changeAcurrencyConverted )
 select.addEventListener('click', resetInput )
 
