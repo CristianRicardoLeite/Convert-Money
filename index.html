@@ -20,12 +20,12 @@
 <body>
     <div class="container">
         <div class="navBar-text">
-            <h1> Money Convert </h1>
+            <h1 class="MainText"> Money Convert </h1>
         </div>
 
         <div class="mainContent-imputs">
             <label class="container-input">
-                <p class="input-descriptions">Converter <b>de</b></p>
+                <p class="input-descriptions">Convert <b>from</b></p>
                 <select id="converting-currency" placeholder="Moeda conversora">
                     <option> Please, Choose one accurrency </option>
                     <option  value="R$ Real">R$ Real</option>
@@ -34,7 +34,7 @@
                 </select>
             </label>
             <label class="container-input">
-                <p class="input-descriptions">Converter <b>para</b> </p>
+                <p class="input-descriptions">Convert <b>to</b> </p>
                 <select id="select-coin">
                     <option> Please, Choose one accurrency </option>
                     <option id="R$ Real">R$ Real</option>
@@ -51,6 +51,7 @@
         <div>
             <button id="converter-button">Converter</button>
         </div>
+        <div class="moviment-box"></div>
         <div class="resultsView">
             <div class="content-view">
                 <img src="./assets/Real.png" id="Converting-flag">
