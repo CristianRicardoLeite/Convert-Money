@@ -14,6 +14,7 @@ const converter = async () => {
     const inputValues = document.getElementById('valuesInput').value
     const resultText = document.getElementById('resultConverterView1')
     const converterResult = document.getElementById('resultConvertedView2')
+    const convertingCurrency = document.getElementById('converting-currency').value
 
     const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,BRL-USD,EUR-USD,BTC-USD,BRL-EUR,USD-EUR,BTC-EUR").then(response => response.json())
 
