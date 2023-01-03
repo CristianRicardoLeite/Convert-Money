@@ -109,31 +109,23 @@ const converter = async () => {
 }
 
 const selectDisable = () => {
-    var select = document.getElementById('converting-currency');
-	var value = select.options[select.selectedIndex].value;
-	console.log(value);
-    
-    if (value === "US$ Dolar Americano") {
-        const selectConvertedAcurrency = document.getElementById('US$ Dolar Americano')
-        selectConvertedAcurrency.setAttribute('disabled', '')
-        document.getElementById('€ Euro').removeAttribute("disabled")
-        document.getElementById('R$ Real').removeAttribute("disabled")
+	 optionSelected = convertingCurrency.options[convertingCurrency.selectedIndex].value
+     totalOptions = convertingCurrency.options.length
 
-    }
-    else if (value === "€ Euro") {
-        const selectConvertedAcurrency = document.getElementById('€ Euro')
-        selectConvertedAcurrency.setAttribute('disabled', '') 
-        document.getElementById('US$ Dolar Americano').removeAttribute("disabled")
-        document.getElementById('R$ Real').removeAttribute("disabled")
-    }
+     for (let i = 1; i < totalOptions; i++) {
+         
+        elementOptionFor = convertingCurrency.options[i].value
 
-    else if (value === "R$ Real") {
-        const selectConvertedAcurrency = document.getElementById('R$ Real')
-        selectConvertedAcurrency.setAttribute('disabled', '')
-        document.getElementById('US$ Dolar Americano').removeAttribute("disabled")
-        document.getElementById('€ Euro').removeAttribute("disabled")
-    }
+         if(elementOptionFor === optionSelected){
+            document.getElementById(elementOptionFor).setAttribute('disabled', '')
+            document.getElementById(elementOptionFor).style.display = "none"
+        }else{
+            document.getElementById(elementOptionFor).removeAttribute("disabled")
+            document.getElementById(elementOptionFor).style.display = "block"
+        } 
 
+        select.options[0].selected = "true"
+      }
 }
 
 
