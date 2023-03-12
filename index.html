@@ -1,73 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <title>Money converter</title>
-</head>
+    <link rel="icon" href="assets/Currency_Conversion_icon.png" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="navBar-text">
-            <h1 class="MainText"> Money Convert </h1>
-        </div>
+      <div class="navBar-text">
+        <h1 class="MainText">Money Convert</h1>
+      </div>
 
-        <div class="mainContent-imputs">
-            <label class="container-input">
-                <p class="input-descriptions">Convert <b>from</b></p>
-                <select id="converting-currency" placeholder="Moeda conversora">
-                    <option> Please, Choose one accurrency </option>
-                    <option  value="R$ Real">R$ Real</option>
-                    <option  value="US$ Dolar Americano">US$ Dolar Americano</option>
-                    <option  value="€ Euro">€ Euro</option>
-                </select>
-            </label>
-            <label class="container-input">
-                <p class="input-descriptions">Convert <b>to</b> </p>
-                <select id="select-coin">
-                    <option> Please, Choose one accurrency </option>
-                    <option id="R$ Real">R$ Real</option>
-                    <option id="US$ Dolar Americano"> US$ Dolar Americano</option>
-                    <option id="€ Euro"> € Euro</option>
-                    <option> Bitcoin </option>
-                </select>
-            </label>
-            <div class="container-input">
-                <p class="input-descriptions"><span>Valor</span></p>
-                <input id="valuesInput" type="number" />
-            </div>
+      <div class="mainContent-imputs">
+        <label class="container-input">
+          <p class="input-descriptions">Convert <b>from</b></p>
+          <select
+            id="converting-currency"
+            placeholder="Moeda conversora"
+          ></select>
+        </label>
+        <label class="container-input">
+          <p class="input-descriptions">Convert <b>to</b></p>
+          <select id="select-coin"></select>
+        </label>
+        <div class="container-input">
+          <p class="input-descriptions"><span>Valor</span></p>
+          <input id="valuesInput" type="number" placeholder="0"
+          aria-label="container-input"/>
         </div>
-        <div>
-            <button id="converter-button">Converter</button>
+      </div>
+      <div>
+        <button id="converter-button">Converter</button>
+      </div>
+      <div class="moviment-box"></div>
+      <div class="resultsView">
+        <div class="content-view">
+          <img src="assets/unk" id="Converting-flag" alt="iconFlag"/>
+          <p id="coinConverterView">Real</p>
+          <p id="resultConverterView1"></p>
         </div>
-        <div class="moviment-box"></div>
-        <div class="resultsView">
-            <div class="content-view">
-                <img src="./assets/Real.png" id="Converting-flag">
-                <p id="coinConverterView">Real</p>
-                <p id="resultConverterView1">R$ 10.000,00</p>
-            </div>
-            <div class="content-view">
-                <img src="./assets/Vector.png" class="Vector">
-                <p id="coinConvertedText">Dolar</p>
-                <p id="resultConvertedView2">US$ 2.000,00</p>
-                <img src="./assets/Dolar Americano.png" id="coinFlag">
-            </div>
+        <div class="content-view">
+          <img src="./assets/Vector.png" class="Vector" alt="iconVector"/>
+          <p id="coinConvertedText">Dolar</p>
+          <p id="resultConvertedView2"></p>
+          <img src="assets/unk" id="coinFlag" alt="iconFlag"/>
         </div>
+      </div>
     </div>
-</body>
-
-<script src="./function.js"></script>
-
+  </body>
+  <script src="./function.js" defer></script>
 </html>
