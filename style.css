@@ -1,26 +1,27 @@
-*{font-family: 'Fjalla One', sans-serif;
+* {
+    font-family: 'Fjalla One', sans-serif;
     box-sizing: border-box;
-   border: none;
+    border: none;
     padding: 0;
     margin: 0;
     letter-spacing: 0.5px;
 }
 
 
-body{
+body {
     background: linear-gradient(Pink, PeachPuff);
-    width:100vw;
+    width: 100vw;
     height: 100vh;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     border-radius: 4%;
-    
+
 }
 
 .container {
     width: 600px;
     height: 1000px;
-    background: rgb(0,36,16);
-        background: linear-gradient(356deg, rgba(0,36,16,1) 4%, rgba(9,121,9,1) 100%, rgba(0,212,255,1) 100%);
+    background: rgb(0, 36, 16);
+    background: linear-gradient(356deg, rgba(0, 36, 16, 1) 4%, rgba(9, 121, 9, 1) 100%, rgba(0, 212, 255, 1) 100%);
     margin: 35px auto;
 }
 
@@ -29,79 +30,82 @@ body{
     height: 100px;
     border: none;
     color: antiquewhite;
-    background: rgb(8,108,10);
+    background: rgb(8, 108, 10);
     background: linear-gradient(0deg, rgb(9, 46, 9) 0%, rgb(40, 124, 68) 100%);
 }
 
 
 
-    h1{
-        display: flex;
-        justify-content: center;
-        padding: 40px;
-        color: white;
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 18px;
-    }
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 18px;
+}
 
-    input, select{
-        width: 540px;
-        height: 48px;
-        margin: 6px 30px;
-        padding: 16px;
-        color: rgb(34, 36, 35);
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 18px;
-        border: 1px solid rgb(187, 187, 187);
-        border-radius: 15px;
-        appearance: none;
-        outline: none;
-        box-shadow: rgb(0 0 0 / 15%) 2px 2px 5px;
-    }
+input,
+select {
+    width: 540px;
+    height: 48px;
+    margin: 6px 30px;
+    padding: 16px;
+    color: rgb(34, 36, 35);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 15px;
+    appearance: none;
+    outline: none;
+    box-shadow: rgb(0 0 0 / 15%) 2px 2px 5px;
+}
 
-   .input-descriptions{
-        margin-top: 45px;
-        margin-left: 40px;
-        margin-bottom: 10px;
-        color: white;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 29px;       
-    }
+.input-descriptions {
+    margin-top: 45px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+}
 
-    .converting-currency{
-        font-size: 2rem;
-    }
+.converting-currency {
+    font-size: 2rem;
+}
 
-    select{
-        padding: 12px;
-        font-size: 1.1rem;    
-    }
+select {
+    padding: 12px;
+    font-size: 1.1rem;
+}
 
-    button{
-        width: 450px;
-        height: 60px;
-        border: none;
-        border-radius: 25px;
-        color: #F4F4F4;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 18px;
-        background: rgb(24,227,24);
-        background: radial-gradient(circle, rgba(24,227,24,1) 4%, rgba(50,149,24,1) 45%, rgba(22,96,49,1) 98%); margin: 50px 75px;
-        cursor: pointer;
-    }
+button {
+    width: 450px;
+    height: 60px;
+    border: none;
+    border-radius: 25px;
+    color: #F4F4F4;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+    background: rgb(24, 227, 24);
+    background: radial-gradient(circle, rgba(24, 227, 24, 1) 4%, rgba(50, 149, 24, 1) 45%, rgba(22, 96, 49, 1) 98%);
+    margin: 50px 75px;
+    cursor: pointer;
+}
 
-    button:hover{
-        opacity: 0.7;
-    }
+button:hover {
+    opacity: 0.7;
+}
 
-    button:active{
-        opacity: 0.5;
-    }
-    .moviment-box{
+button:active {
+    opacity: 0.5;
+}
+
+.moviment-box {
     width: 20px;
     height: 20px;
     border: 50%;
@@ -109,149 +113,179 @@ body{
     background-color: transparent;
     position: relative;
     -webkit-animation-name: charging;
-    -webkit-animation-duration: 4s; 
+    -webkit-animation-duration: 4s;
     animation-name: charging;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
- @keyframes charging {
-    0%   {background-color:rgb(247, 247, 247); left:0px; top:0px;}
-    25%  {background-color:rgb(237, 241, 236); left:332px; top:0px;}
-    50%  {background-color:rgb(183, 192, 186); left:332px; top:282px;}
-    75%  {background-color:rgb(196, 191, 191); left:0px; top:282px;}
-    100% {background-color:rgb(156, 167, 156); left:0px; top:0px;}
+@keyframes charging {
+    0% {
+        background-color: rgb(247, 247, 247);
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: rgb(237, 241, 236);
+        left: 332px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: rgb(183, 192, 186);
+        left: 332px;
+        top: 282px;
+    }
+
+    75% {
+        background-color: rgb(196, 191, 191);
+        left: 0px;
+        top: 282px;
+    }
+
+    100% {
+        background-color: rgb(156, 167, 156);
+        left: 0px;
+        top: 0px;
+    }
 }
 
+.resultsView {
+    width: 365px;
+    height: 320px;
+    font-size: 20px;
+    background: rgb(0, 36, 16);
+    background: linear-gradient(356deg, rgba(0, 36, 16, 1) 4%, rgba(9, 121, 9, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    border: 4px solid white;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.Vector {
+    margin: 2px;
+    width: 35px;
+    height: 50px;
+}
+
+#coinFlag {
+    width: 50px;
+    height: 50px;
+}
+
+#Converting-flag {
+    width: 50px;
+    height: 50px;
+}
+
+.content-view {
+    margin-top: 15px;
+    color: white;
+}
+
+#resultConverterView {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 18px;
+    color: #1B83E2;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .container {
+        width: 375px;
+        height: 766px;
+        margin: 0 auto;
+    }
+
+    .navBar-text {
+        width: 100%;
+        height: 66px;
+        border: none;
+        background: #444038;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 18px;
+    }
+
+    input {
+        width: 327px;
+        height: 48px;
+        margin: 6px 24px;
+        padding: 16px;
+        color: #222423;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        border: 1px solid #BBBBBB;
+        border-radius: 15px;
+        appearance: none;
+        outline: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .input-descriptions {
+        margin-top: 24px;
+        margin-left: 23px;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 18px;
+    }
+
+    select {
+        width: 327px;
+        height: 48px;
+        margin: 6px 24px;
+        padding: 14px;
+        color: #222423;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        border: 1px solid #BBBBBB;
+        border-radius: 15px;
+        cursor: pointer;
+        appearance: none;
+        outline: none;
+    }
+
+    button {
+        width: 327px;
+        height: 48px;
+        border: none;
+        border-radius: 25px;
+        color: #F4F4F4;
+        font-style: bold;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        background-color: #444038;
+        margin: 30px 24px;
+        cursor: pointer;
+    }
+
     .resultsView {
-        width: 365px;
-        height: 320px;
-        font-size: 20px;
-        background: rgb(0,36,16);
-        background: linear-gradient(356deg, rgba(0,36,16,1) 4%, rgba(9,121,9,1) 100%, rgba(0,212,255,1) 100%);
-        border: 4px solid white;
+        width: 327px;
+        height: 290px;
+        font-size: 16px;
+        background-color: #32302c;
+        ;
+        border: 6px solid #444038;
         border-radius: 4px;
         margin: 0 auto;
-        margin-top: -30px;
+        margin-top: -17px;
         text-align: center;
     }
 
-    .Vector{
-        margin:5px;
-    }
-
-    #coinFlag{
-        margin-top: 6px;
-    }
-
-    .content-view{
-        margin-top: 15px;
-        color:white;
-    }
-
-    #resultConverterView{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 18px;
-        color: #1B83E2;
-    }
 
 
-    @media screen and (max-width: 400px){
-
-        .container {
-            width:375px;
-            height: 766px;
-            margin: 0 auto;
-        }
-
-        .navBar-text {
-            width: 100%;
-            height: 66px;
-            border: none;
-            background: #444038; 
-        }
-        
-        h1{
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 18px;
-        }
-
-        input{
-            width: 327px;
-            height: 48px;
-            margin: 6px 24px;
-            padding: 16px;
-            color: #222423;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 18px;
-            border: 1px solid #BBBBBB;
-            border-radius: 15px;
-            appearance: none;
-            outline: none;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
-        }
-
-        .input-descriptions{
-            margin-top: 24px;
-            margin-left: 23px;
-            font-weight: 400;
-            font-size: 19px;
-            line-height: 18px;       
-        }
-
-        select{
-            width: 327px;
-            height: 48px;
-            margin: 6px 24px;
-            padding: 14px;
-            color: #222423;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 18px;
-            border: 1px solid #BBBBBB;
-            border-radius: 15px;
-            cursor: pointer;
-            appearance: none;
-            outline: none;
-        }
-
-        button{
-            width: 327px;
-            height: 48px;
-            border: none;
-            border-radius: 25px;
-            color: #F4F4F4;
-            font-style: bold;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 18px;
-            background-color: #444038;
-            margin: 30px 24px;
-            cursor: pointer;
-        }
-
-        .resultsView {
-            width:327px;
-            height:290px;
-            font-size: 16px;
-            background-color: #32302c; ;
-            border: 6px solid #444038;
-            border-radius: 4px;
-            margin: 0 auto;
-            margin-top: -17px;
-            text-align: center;
-        }
-
-
-    
-    }
-        
-
-  
+}
