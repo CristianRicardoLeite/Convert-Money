@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Money converter</title>
+    <link rel="icon" href="assets/Currency_Conversion_icon.png" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navBar-text">
+        <h1 class="MainText">Money Convert</h1>
+      </div>
+
+      <div class="mainContent-imputs">
+        <label class="container-input">
+          <p class="input-descriptions">Convert <b>from</b></p>
+          <select
+            id="converting-currency"
+            placeholder="Moeda conversora"
+          ></select>
+        </label>
+        <label class="container-input">
+          <p class="input-descriptions">Convert <b>to</b></p>
+          <select id="select-coin"></select>
+        </label>
+        <div class="container-input">
+          <p class="input-descriptions"><span>Value</span></p>
+          <input id="valuesInput" type="number" placeholder="0"
+          aria-label="container-input"/>
+        </div>
+      </div>
+      <div>
+        <button id="converter-button">Convert</button>
+      </div>
+      <div class="moviment-box"></div>
+      <div class="resultsView">
+        <div class="content-view">
+          <img src="assets/unk" id="Converting-flag" alt="iconFlag"/>
+          <p id="coinConverterView">Real</p>
+          <p id="resultConverterView1"></p>
+        </div>
+        <div class="content-view">
+          <img src="./assets/Vector.png" class="Vector" alt="iconVector"/>
+          <p id="coinConvertedText">Dolar</p>
+          <p id="resultConvertedView2"></p>
+          <img src="assets/unk" id="coinFlag" alt="iconFlag"/>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./function.js" defer></script>
+</html>
